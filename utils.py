@@ -21,6 +21,7 @@ def step_cost(action):
     return 0  # the cost of action
 
 
+
 def step(env, action):
     """
     Take Action
@@ -94,7 +95,9 @@ def load_random_env(env_folder):
     Returns:
         gym-environment, info
     """
-    env_list = [os.path.join(env_folder, env_file) for env_file in os.listdir(env_folder)]
+    #env_list = [os.path.join(env_folder, env_file) for env_file in os.listdir(env_folder)]
+    env_list = [os.path.join(env_folder, env_file) for env_file in os.listdir(env_folder) if env_file.endswith(".env")]
+
     env_path = random.choice(env_list)
     with open(env_path, "rb") as f:
         env = pickle.load(f)

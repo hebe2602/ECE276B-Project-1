@@ -29,11 +29,23 @@ pip install -r requirements.txt
 ```
 
 ## Instruction
-### 1. doorkey.py
-You will need to modify **doorkey.py** as the main entrance.
+### 1. doorkey_part_A.py
+This file contains the python implemntation for part A. To run the code you have to have the installations above and run:
+```bash
+python3 doorkey_part_A.py
+```
+To change environments, the code can be modified in line 190 to the wanted environments.
+
+### 1. doorkey_part_B.py
+This file contains the python implemntation for part A. To run the code you have to have the installations above and run:
+```bash
+python3 doorkey_part_B.py
+```
+
+
 
 ### 2. utils.py
-You might find some useful tools in utils.py
+Contains some useful tools for the environment used in the implenetation this project.
 - **step()**: Move your agent
 - **generate_random_env()**: Generate a random environment for debugging
 - **load_env()**: Load the test environments
